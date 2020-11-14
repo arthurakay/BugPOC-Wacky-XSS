@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "sri": "cd public/files/analytics/js && openssl dgst -sha256 -binary ./frame-analytics.js | openssl base64 -A && cd ../../../../"
   },
   "author": "",
   "license": "ISC",
